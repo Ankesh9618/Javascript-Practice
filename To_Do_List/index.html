@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+    <title>TODO Application</title>
+</head>
+<body>
+    <div class="container box p-6 ">
+        <h1 class="title has-text-centered has-text-success">TODO List</h1>
+        <h2 class="subtitle has-text-centered">CRUD operations using localStorage</h2>
+
+        <form action="">
+            <div class="field ">
+                <label class="label">Task:</label>
+                <div class="control">
+                    <input type="text" class="input" placeholder="Enter the task" id="task" required>
+                </div>
+            </div>
+            <div class="field ">
+                <div class="control">
+                    <label for="" class="label">Priority:</label>
+                    <label for="" class="radio pr-1">
+                        <input type="radio" name="priority" id="low" class="priority" value="Low" checked>Low
+                    </label>
+                    <label for="" class="radio px-1">
+                        <input type="radio" name="priority" id="med" class="priority" value="Medium">Medium
+                    </label>
+                    <label for="" class="radio px-1">
+                        <input type="radio" name="priority" id="high" class="priority" value="High">High
+                    </label>
+                    
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-success" onclick="putTask()">Add Task</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light" type="reset">Reset</button>
+                </div>
+            </div>
+
+            <h1 class="py-6">Task Count: <span class="task-count">0</span></h1>
+
+            <table class="table" id="tasks">
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Task</th>
+                        <th>Priority</th>
+                        <th>Completion</th>
+                        <th>Modify</th>
+                    </tr>
+                </thead>
+                <tbody class="has-text-centered" >
+                    
+                </tbody>
+            </table>
+        </form>
+    </div>
+    
+
+</body>
+</html>
