@@ -1,0 +1,12 @@
+/* Set the width for each column class */
+.column-task {
+    width: 60%;
+}
+
+.column-other {
+    width: 10%;
+}
+
+.column-priority {
+    width: 15%;
+}

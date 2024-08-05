@@ -45,23 +45,37 @@
                 </div>
             </div>
 
-            <h1 class="py-6">Task Count: <span class="task-count">0</span></h1>
+            
+        </form>
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="pt-6 pb-2">Task Count: <span id="task-count">0</span></h1>
+                </div>
+                <div class="column ">
+                    <h1 class="pt-6 pb-2">Completed Tasks: <span id="completed-tasks">0</span></h1>
+                    <button class="button is-grey" onclick="resetCompleted()">Clear</button>
+                </div>
+                
+            </div>
+           
 
-            <table class="table" id="tasks">
+            <table class="table is-fullwidth" id="tasks">
                 <thead>
                     <tr>
-                        <th>Sr No</th>
-                        <th>Task</th>
-                        <th>Priority</th>
-                        <th>Completion</th>
-                        <th>Modify</th>
+                        <th class="column-other">Sr No</th>
+                        <th class="column-task">Task</th>
+                        <th class="column-priority">Priority</th>
+                        <th class="column-other">Completion</th>
+                        <th class="column-other">Modify</th>
+                        <th class="column-other"></th>
                     </tr>
                 </thead>
-                <tbody class="has-text-centered" >
+                <tbody>
                     
                 </tbody>
             </table>
-        </form>
+        </div>
     </div>
     
 
